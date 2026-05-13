@@ -1,0 +1,16 @@
+{
+  "name": "aurora-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "test:sim": "node ./scripts/sim-test.js"
+  },
+  "dependencies": {
+    "expo": "^52.0.0",
+    "react": "18.3.1",
+    "react-native": "0.76.1"
+  }
+}
