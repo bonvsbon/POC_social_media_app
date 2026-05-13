@@ -5,7 +5,8 @@
 - Data model and API contracts
 - Engineering conventions
 
-## Phase 2 — Backend Foundation (In Progress)
+
+## Phase 2 — Backend Foundation (Completed)
 - NestJS modular backend skeleton
 - Core modules: auth, user, video, feed, social
 - Baseline SQL migration and tests

@@ -44,6 +44,18 @@ A Docker Compose stack is planned for the next implementation phase (Phase 7 pro
 - Explainable feed ranking
 - Clean API versioning and RBAC patterns from day one
 
+## Additional Apps (Scaffolded)
+
+- `apps/mobile` — React Native (Expo) mobile shell
+- `apps/admin` — Next.js admin dashboard shell
+- `apps/creator` — Next.js creator dashboard shell
+
+## Infrastructure Bootstrap
+
+- `docker-compose.yml` for local API + Postgres + Redis + MinIO
+- `.env.example` for environment variables
+- `docs/PRODUCTION_READINESS.md` and `docs/AUTOMATION_SERVICES.md` for phases 6-7
+
 ## Current Implementation Status
 
 - ✅ Planning/Architecture docs
