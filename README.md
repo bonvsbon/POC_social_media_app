@@ -44,7 +44,6 @@ A Docker Compose stack is planned for the next implementation phase (Phase 7 pro
 - Explainable feed ranking
 - Clean API versioning and RBAC patterns from day one
 
-
 ## Additional Apps (Scaffolded)
 
 - `apps/mobile` — React Native (Expo) mobile shell
