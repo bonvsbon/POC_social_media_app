@@ -44,6 +44,26 @@ A Docker Compose stack is planned for the next implementation phase (Phase 7 pro
 - Explainable feed ranking
 - Clean API versioning and RBAC patterns from day one
 
+
+
+## Local URIs (No Docker)
+
+- API: `http://localhost:3000/api/v1`
+- Mobile (Expo dev tools): `http://localhost:8081`
+- Mobile (browser mode): run `npm run start -- --web` in `apps/mobile`, then open `http://localhost:19006`
+- Admin dashboard: run `npm run dev` in `apps/admin`, then open `http://localhost:3001` (or the port shown in terminal)
+- Creator dashboard: run `npm run dev` in `apps/creator`, then open `http://localhost:3002` (or the port shown in terminal)
+
+Tip: for admin/creator, use explicit ports to avoid conflict:
+
+```bash
+# terminal A
+cd apps/admin && npm run dev -- -p 3001
+
+# terminal B
+cd apps/creator && npm run dev -- -p 3002
+```
+
 ## Additional Apps (Scaffolded)
 
 - `apps/mobile` — React Native (Expo) mobile shell
