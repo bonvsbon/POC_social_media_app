@@ -86,3 +86,42 @@ cd apps/creator && npm run dev -- -p 3002
 - 🚧 Mobile app, admin dashboard, creator dashboard (future phases)
 
 See `docs/ROADMAP.md` for phased delivery.
+
+
+## Integration Run Order (No Docker)
+
+1. Start API first:
+
+```bash
+cd apps/api
+npm install
+npm run start:dev
+```
+
+2. Start Admin (integrated to API):
+
+```bash
+cd apps/admin
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/api/v1 npm run dev -- -p 3001
+```
+
+3. Start Creator (integrated to API):
+
+```bash
+cd apps/creator
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/api/v1 npm run dev -- -p 3002
+```
+
+4. Start Mobile (integrated to API):
+
+```bash
+cd apps/mobile
+EXPO_PUBLIC_API_BASE_URL=http://localhost:3000/api/v1 npm run start -- --web
+```
+
+Then open:
+- Admin: `http://localhost:3001`
+- Creator: `http://localhost:3002`
+- Mobile Web: `http://localhost:19006`
+
+> If testing on a physical phone, replace `localhost` with your computer LAN IP.
